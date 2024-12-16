@@ -1,0 +1,81 @@
+# Node.js dependencies
+server/node_modules/
+front/node_modules/
+
+# Logs
+server/logs/
+front/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+server/dist/
+server/build/
+front/dist/
+front/build/
+server/.next/
+front/.next/
+server/out/
+front/out/
+
+# Temporary files
+*.swp
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.save
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+server/.env
+server/.env.local
+server/.env.*.local
+front/.env
+front/.env.local
+front/.env.*.local
+
+# Test and coverage reports
+server/coverage/
+front/coverage/
+*.lcov
+
+# Dependency directories
+server/jspm_packages/
+front/jspm_packages/
+
+# Generated files
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.log
+
+# ESLint cache
+server/.eslintcache
+front/.eslintcache
+
+# TypeScript
+server/*.tsbuildinfo
+front/*.tsbuildinfo
+
+# Prettier cache
+server/.prettiercache
+front/.prettiercache
+
+# Other configurations
+server/local.env
+front/local.env
