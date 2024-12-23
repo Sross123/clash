@@ -36,12 +36,12 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          montserrat.variable,
+          montserrat.className,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+          <div className="relative flex flex-col w-full h-screen bg-slate-50">
+            <main className="w-full h-screen flex-grow">
               {children}
             </main>
           </div>
