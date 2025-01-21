@@ -4,7 +4,7 @@ import type { ThemeProviderProps } from "next-themes";
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { NextUIProvider } from "@nextui-org/system";
+import { HeroUIProvider } from "@heroui/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -27,10 +27,10 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <NextUIProvider navigate={router.push}>
+      <HeroUIProvider navigate={router.push}>
         <ReactQueryDevtools initialIsOpen={false} />
         <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-      </NextUIProvider>
+      </HeroUIProvider>
     </QueryClientProvider>
   );
 }
